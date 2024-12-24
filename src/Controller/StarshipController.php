@@ -14,7 +14,6 @@ class StarshipController extends AbstractController
     {
         $ship = $repository->find($id);
 
-
         if (!$ship) {
             throw $this->createNotFoundException('Starship not found');
         }
